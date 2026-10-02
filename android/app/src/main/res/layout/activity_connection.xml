@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#0F172A">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conectar con la Mac"
+        android:textColor="#E2E8F0"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desconectado"
+        android:textColor="#F8FAFC"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:background="#1E293B"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/lastActionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Última acción: ninguna"
+        android:textColor="#A5F3FC"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:background="#0F172A"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/hostInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IP de la Mac"
+        android:inputType="text"
+        android:textColor="#E2E8F0"
+        android:textColorHint="#94A3B8"
+        android:background="#1E293B"
+        android:padding="14dp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/pinInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PIN de la barra de menús"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColor="#E2E8F0"
+        android:textColorHint="#94A3B8"
+        android:background="#1E293B"
+        android:padding="14dp"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Conectar"
+        android:backgroundTint="#22C55E" />
+
+    <TextView
+        android:id="@+id/volumeAccessStatusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comprobando acceso a botones de volumen..."
+        android:textColor="#FCA5A5"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:background="#7F1D1D"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/volumeAccessButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Activar botones de volumen"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2563EB" />
+
+    <Button
+        android:id="@+id/batteryOptimizationButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Permitir actividad con pantalla apagada"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#0F766E" />
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#0F172A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Control Presentación"
+            android:textColor="#E2E8F0"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="●"
+            android:textColor="#22C55E"
+            android:textSize="20sp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="Conectado" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lastActionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Última acción: conectado"
+        android:textColor="#A5F3FC"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:background="#0F172A"
+        android:layout_marginBottom="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VOL+ siguiente  ·  VOL− anterior"
+        android:textColor="#E2E8F0"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:layout_marginBottom="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/previousButton"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:text="Anterior"
+            android:textSize="18sp"
+            android:backgroundTint="#3B82F6"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_weight="1"
+            android:text="Siguiente"
+            android:textSize="18sp"
+            android:backgroundTint="#8B5CF6"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:text="Iniciar"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:backgroundTint="#14B8A6"
+            android:minHeight="64dp" />
+
+        <Button
+            android:id="@+id/blackButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:text="Negra"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:backgroundTint="#F59E0B"
+            android:minHeight="64dp" />
+
+        <Button
+            android:id="@+id/endButton"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:text="Finalizar"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:backgroundTint="#EF4444"
+            android:minHeight="64dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/disconnectButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Desconectar"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#DC2626" />
+
+</LinearLayout>

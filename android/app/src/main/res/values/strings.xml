@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="volume_service_description">Controla la presentación con los botones de volumen, incluso con la pantalla apagada</string>
+</resources>
